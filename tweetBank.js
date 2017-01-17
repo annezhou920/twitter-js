@@ -3,7 +3,8 @@ const _ = require('lodash');
 var data = [];
 
 function add (name, content) {
-  data.push({ name: name, content: content });
+  var id = data.length + 1;
+  data.push({ name: name, content: content, id: id });
 }
 
 function list () {
@@ -39,6 +40,8 @@ for (let i = 0; i < 10; i++) {
   module.exports.add( getFakeName(), getFakeTweet() );
 }
 
+add('anne', 'test tweet')
+add('anne', 'another tweet')
 // console.log(find(function(o){
 //   return o.name.indexOf('David') > -1;
 // }))

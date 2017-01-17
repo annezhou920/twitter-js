@@ -11,7 +11,7 @@ body {
   /* Negative indent footer by its height */
   margin: 0 auto -60px;
   /* Pad bottom by footer height */
-  padding: 0 0 60px;
+  padding: 0 0 100px;
 }
 
 /* Set the fixed height of the footer here */
@@ -41,6 +41,10 @@ code {
   font-size: 80%;
 }
 
+li {
+  list-style: none;
+}
+
 .tweetbox {
   padding: 7px;
 }
@@ -53,7 +57,9 @@ code {
 }
 .content {
   margin-left: 60px;
+  padding: 2px;
 }
-.content .by {
+
+.by {
   font-weight: bold;
 }
