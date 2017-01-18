@@ -94,7 +94,7 @@
     // When 'new_tweet' events are fired, do something with the packaged tweet
     socket.on('newTweet', function (tweet) {
       console.log(tweet);
-      alert('Refreshing... check the console...');
+      // alert('Refreshing... check the console...');
       $tweets.append('<div class="tweetbox"><img><div class="content"><p class="by"><a href="/users/' + tweet.name + '">' + tweet.name + '</a></p><p><a href="/tweets/' + tweet.id + '">' + tweet.text + '</a></p></div></div>');
      });
    </script>
